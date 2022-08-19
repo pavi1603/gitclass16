@@ -1,8 +1,7 @@
-     package org.utilies;
+package org.datadriven;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -16,14 +15,10 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-
-
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BaseClass {
-	static Actions a;
+public class Task11 {
 	public static WebDriver driver;
 
 	// 1
@@ -46,50 +41,18 @@ public class BaseClass {
 	// 5
 	public static void printCurrentUrl() {
 		System.out.println(driver.getCurrentUrl());
-	}/*
-	// 6
-	public static void gro(WebElement ele) {
-		a = new Actions(driver);
-		a.moveToElement(ele).perform();
 	}
-	// 7
-	public static void house(WebElement ele) {
-		a = new Actions(driver);
-		a.moveToElement(ele).click().build().perform();
-	}*/
-	// 8
-	public static void sign(WebElement ele) {
-		ele.click();
-		
-
-	}
-	// 9
+	
 	public static void fill(WebElement ele, String value) {
 		// webelementref.sendkeys("");
 		ele.sendKeys(value);
 	}
-	// 10
-	public static void rightClick(WebElement ele) {
-		a = new Actions(driver);
-		a.contextClick(ele).perform();
-	}
-	// 11
-	public static void dClick(WebElement ele) {
-		a = new Actions(driver);
-		a.doubleClick(ele).perform();
-	}
-	// 12
-	public static void btnclick(WebElement ele) {
-		ele.click();    
-	}
-	// 13
-	//public static void closeBrowser() {
-		//driver.close();
-
-	//}
+		public static void sign(WebElement ele) {
+			ele.click();
+		}	
 	public static String  getData(int rowNumber,int cellNumber) throws IOException {
 		//1.mention the file location
-		File f = new File("C:\\Users\\Lenovo\\eclipse-workspace\\9.30FrameWorkProject\\src\\test\\resources\\TestData\\costco.xlsx");
+		File f = new File("C:\\Users\\Lenovo\\eclipse-workspace\\9.30FrameWorkProject\\src\\test\\resources\\TestData\\nau.xlsx");
 		
 		//2.Read the value from Excel
 		FileInputStream fin = new FileInputStream(f);
@@ -125,7 +88,7 @@ public class BaseClass {
 		
    }
    return value;
-	}
 	
-
 }
+}
+

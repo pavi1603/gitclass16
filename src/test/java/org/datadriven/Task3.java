@@ -40,10 +40,10 @@ public class Task3 {
 				cell.setCellValue("priya");
 				
 				//8.create a row
-				Row r = s.createRow(1);
+				Row r = s.createRow(0);
 				
 				//9.create a cell
-				Cell c = r.createCell(0);
+				Cell c = r.createCell(1);
 				
 				//10.set the value
 				c.setCellValue("english");

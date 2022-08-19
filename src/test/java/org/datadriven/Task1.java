@@ -22,12 +22,8 @@ public class Task1 {
 				//3.type of Workbook
 				Workbook w = new XSSFWorkbook(fin);
 				
-		         
 				//4.get the sheet
 				Sheet s = w.getSheet("sheet1");
-				
-				
-				
 				
 				//get the physical number of rows
 				int pRows = s.getPhysicalNumberOfRows();
@@ -39,6 +35,6 @@ public class Task1 {
 				//get the physical number of cells
 				int pCells = r1.getPhysicalNumberOfCells();
 				System.out.println("physical number of cells:"+pCells); 
+				
 	}
-
 }
