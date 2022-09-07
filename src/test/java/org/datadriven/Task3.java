@@ -18,7 +18,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class Task3 {
 	public static void main(String[] args) throws IOException {
 		//1.mention the file location
-				File f = new File("C:\\Users\\Lenovo\\eclipse-workspace\\9.30FrameWorkProject\\src\\test\\resources\\TestData\\school.xlsx");
+				File f = new File("C:\\Users\\Lenovo\\OneDrive\\Desktop\\clone\\gitclass16\\src\\test\\resources\\TestData\\sch.xlsx");
 				
 				//2.create a new file
 				boolean a = f.createNewFile();
@@ -46,7 +46,7 @@ public class Task3 {
 				Cell c = r.createCell(1);
 				
 				//10.set the value
-				c.setCellValue("english");
+				c.setCellValue("eng");
 				
 				//11.update the file
 				FileOutputStream fout = new FileOutputStream(f);

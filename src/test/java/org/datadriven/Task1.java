@@ -14,7 +14,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class Task1 {
 	public static void main(String[] args) throws IOException {
 		//1.mention the file location
-				File f = new File("C:\\Users\\Lenovo\\eclipse-workspace\\9.30FrameWorkProject\\src\\test\\resources\\TestData\\student.xlsx");
+				File f = new File("C:\\Users\\Lenovo\\OneDrive\\Desktop\\clone\\gitclass16\\src\\test\\resources\\TestData\\student.xlsx");
 				
 				//2.Read the value from Excel
 				FileInputStream fin = new FileInputStream(f);

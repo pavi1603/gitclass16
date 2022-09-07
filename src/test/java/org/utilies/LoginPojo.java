@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPojo  extends BaseClass{
+public class LoginPojo extends BaseClass {
 	
 	//1.non para constructor
 	public LoginPojo() {
